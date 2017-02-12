@@ -1,0 +1,5 @@
+<?php
+
+#Lost password function 
+
+?>
