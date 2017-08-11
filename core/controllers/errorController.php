@@ -1,1 +1,5 @@
-<?php phpinfo(); ?>
+<?php 
+
+include('html/index/index.php');
+
+?>

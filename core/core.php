@@ -9,9 +9,9 @@ define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
 define('DB_NAME','ocrendbb');
-require('core/models/class.Conexion.php');
 
 #Functions required for all the app
+require('core/models/class.Conexion.php');
 require('core/bin/functions/Users.php');
 
 ?>
