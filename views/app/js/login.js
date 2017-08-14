@@ -13,7 +13,6 @@ function goLogin() {
         result += '<p><strong>Estamos redireccionandote...</strong></p>';
         result += '</div>';
         __('_AJAX_LOGIN_').innerHTML = result;
-        location.reload();
       } else {
         __('_AJAX_LOGIN_').innerHTML = connect.responseText;
       }

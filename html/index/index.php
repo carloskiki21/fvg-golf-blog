@@ -6,7 +6,11 @@
 		<title> <?php echo APP_TITTLE ?> </title>
 	</head>
 <body>
-	<h2>Frontend</h2>
 	<a href="?view=login">Login</a>
+
+	<h2>Welcome</h2>
+
+
+	
 </body>
 </html>

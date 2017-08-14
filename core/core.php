@@ -9,7 +9,7 @@ define('APP_URL','http://localhost/Apps/fvg-golf-blog/');
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','');
+define('DB_NAME','crud');
 
 #Functions required for all the app
 require('core/models/class.Conexion.php');
