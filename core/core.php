@@ -15,4 +15,5 @@ define('DB_NAME','crud');
 require('core/models/class.Conexion.php');
 require('core/bin/functions/Users.php');
 
+$_users = Users();
 ?>
