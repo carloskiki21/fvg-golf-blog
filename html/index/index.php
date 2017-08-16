@@ -8,20 +8,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 <body>
-	<?php 
-		if (isset($_SESSION['app_id'])) {
-			
-			?> <a href="?view=logout">Salir</a> <?php
-		}else{
-			?> <a href="?view=login">Login</a> <?php
-		}
-	?>
-
 	<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -30,7 +20,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li>
+				<li class="active">
 					<a href="#">Home</a>
 				</li>
 				<li>
@@ -44,8 +34,8 @@
             	if (isset($_SESSION['app_id'])) {
             		?>
             			<ul class="nav navbar-nav navbar-right">
-            				<li class="active">
-				            	<a href="#"><?php echo $_users[$_SESSION['app_id']]['user']; ?></a>
+            				<li class="">
+				            	<a href="#"><?php echo strtoupper($_users[$_SESSION['app_id']]['user']); ?></a>
 				            </li>
 				            <li>
 				            	<a href="?view=logout">Salir</a>
@@ -56,14 +46,17 @@
             		?>
             			<ul class="nav navbar-nav navbar-right">
             				<li>
-			            		<a href="?view=login">Iniciar sesion</a>
+			            		<a href="?view=login">Sign in</a>
+			            	</li>
+										<li>
+			            		<a href="?view=reg">Sign Up</a>
 			            	</li>
             			</ul>
-            			
+
             		<?php
             	}
             ?>
-          
+
         </div>
       </div>
     </nav>
