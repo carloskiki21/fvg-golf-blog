@@ -1,7 +1,11 @@
 <?php
 
 if($_POST){
-  echo $_POST['user'];
+  if(!empty($_POST['user']) and !empty($_POST['pass'])){
+  	echo $_POST['user'];
+  }else{
+  	echo 'all fields are required';
+  }
 }
 
 ?>
