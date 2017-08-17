@@ -1,5 +1,6 @@
 <?php
 
+#izzi mysqli connetion
 class Conexion extends mysqli {
 
   public function __construct() {
